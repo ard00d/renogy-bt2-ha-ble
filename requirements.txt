@@ -1,0 +1,5 @@
+async-timeout==4.0.2
+bleak==0.20.2
+dbus-fast==1.86.0
+paho-mqtt==1.6.1
+PyYAML==6.0

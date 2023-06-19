@@ -1,0 +1,13 @@
+[Unit]
+Description=Renogy BT-2 MQTT proxy for Home Assistant
+After=multi-user.target
+ 
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/renogy-bt2-ha-ble
+ExecStart=/home/pi/renogy-bt2-ha-ble/venv/bin/python3 /home/pi/renogy-bt2-ha-ble/bt2.py -i10 -q
+Restart=on-failure
+SyslogIdentifier=ha-bt2
+ 
+[Install]
+WantedBy=multi-user.target
