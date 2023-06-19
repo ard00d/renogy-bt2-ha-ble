@@ -37,6 +37,7 @@ I'm just sharing in case anyone else finds this useful, or as a good starting po
    2. Copy the `ha-bt2.service` file to `/etc/systemd/system/`
    3. Enable the service to start on boot 
    ```
+   $ sudo systemctl daemon-reload
    $ sudo systemctl enable ha-bt2.service
    ```
    4. Start the service
